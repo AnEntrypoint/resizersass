@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resizer SaaS - Resize Images Instantly in Your Browser</title>
+  <meta name="description" content="Free, private image resizing. No uploads. No servers. Resize, compress, and optimize images instantly in your browser with professional algorithms.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%234F46E5'/><path d='M8 12l4-4 6 6 4-3 4 4v7H8z' fill='%23818CF8'/><circle cx='12' cy='12' r='2' fill='%23C7D2FE'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="6" fill="#4F46E5"/>
+          <path d="M8 12l4-4 6 6 4-3 4 4v7H8z" fill="#818CF8"/>
+          <circle cx="12" cy="12" r="2" fill="#C7D2FE"/>
+        </svg>
+        <span>Resizer</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#demo">Try It</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="https://github.com/AnEntrypoint/resizer" target="_blank" rel="noopener" class="nav-github">
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">100% Free &middot; No Upload Required &middot; Private</div>
+      <h1>Resize Images Instantly.<br><span class="hero-accent">Right in Your Browser.</span></h1>
+      <p class="hero-sub">Professional-grade image resizing with Lanczos, Bicubic, Bilinear, and Nearest Neighbor algorithms. Your images never leave your device.</p>
+      <div class="hero-actions">
+        <a href="#demo" class="btn btn-primary btn-lg">Try It Now</a>
+        <a href="#how-it-works" class="btn btn-outline btn-lg">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>4</strong>
+          <span>Algorithms</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>0</strong>
+          <span>Uploads</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>100%</strong>
+          <span>Private</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>&lt;1s</strong>
+          <span>Speed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="section-inner">
+      <h2 class="section-title">Why Resizer?</h2>
+      <p class="section-sub">Everything you need for image resizing, nothing you don't.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          </div>
+          <h3>4 Pro Algorithms</h3>
+          <p>Lanczos, Bicubic, Bilinear, and Nearest Neighbor. Choose the right quality-speed tradeoff for your use case.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Privacy First</h3>
+          <p>Images never leave your device. All processing happens locally in your browser. No server, no tracking, no data collection.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Instant Results</h3>
+          <p>No waiting for server responses. Resize images in under a second using optimized pure-JavaScript pixel processing.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>Multiple Fit Modes</h3>
+          <p>Cover, Contain, or Fill. Control exactly how your image fits the target dimensions with professional resize modes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Works Everywhere</h3>
+          <p>Desktop, tablet, or phone. No installation, no plugins, no sign-up. Just open and resize.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>API Available</h3>
+          <p>Need to integrate resizing into your workflow? Our open-source Node.js API handles server-side processing at scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo" id="demo">
+    <div class="section-inner">
+      <h2 class="section-title">Try It Now</h2>
+      <p class="section-sub">Drop an image below and see the resizer in action. Everything runs in your browser.</p>
+
+      <div class="demo-app">
+        <div class="demo-sidebar">
+          <div class="demo-upload" id="dropZone">
+            <div class="demo-upload-content" id="uploadContent">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <span class="demo-upload-text">Drop image here or click to browse</span>
+              <span class="demo-upload-hint">PNG, JPG, WebP, GIF supported</span>
+            </div>
+            <div class="demo-upload-preview" id="uploadPreview" style="display:none">
+              <img id="uploadThumb" alt="Uploaded image">
+              <div class="demo-upload-info" id="uploadInfo"></div>
+              <button class="btn btn-sm btn-ghost" id="clearBtn">Change Image</button>
+            </div>
+            <input type="file" id="fileInput" accept="image/*" hidden>
+          </div>
+
+          <div class="demo-controls" id="controls" style="display:none">
+            <div class="control-group">
+              <label>Mode</label>
+              <div class="control-tabs" id="modeSelect">
+                <button class="control-tab active" data-value="dimensions">Dimensions</button>
+                <button class="control-tab" data-value="scale">Scale</button>
+                <button class="control-tab" data-value="preset">Presets</button>
+              </div>
+            </div>
+
+            <div id="dimensionsPanel">
+              <div class="control-row">
+                <div class="control-group">
+                  <label for="inputWidth">Width</label>
+                  <div class="input-with-unit">
+                    <input type="number" id="inputWidth" min="1" max="8000" placeholder="Auto">
+                    <span>px</span>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label for="inputHeight">Height</label>
+                  <div class="input-with-unit">
+                    <input type="number" id="inputHeight" min="1" max="8000" placeholder="Auto">
+                    <span>px</span>
+                  </div>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-check">
+                  <input type="checkbox" id="lockAspect" checked>
+                  <span>Lock aspect ratio</span>
+                </label>
+              </div>
+              <div class="control-group" id="fitGroup" style="display:none">
+                <label>Fit Mode</label>
+                <select id="fitMode">
+                  <option value="fill">Fill (stretch)</option>
+                  <option value="cover">Cover (crop to fill)</option>
+                  <option value="contain">Contain (letterbox)</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="scalePanel" style="display:none">
+              <div class="control-group">
+                <label for="inputScale">Scale Factor</label>
+                <input type="range" id="inputScale" min="0.1" max="4" step="0.1" value="1">
+                <div class="range-labels">
+                  <span>10%</span>
+                  <span id="scaleDisplay">100%</span>
+                  <span>400%</span>
+                </div>
+              </div>
+            </div>
+
+            <div id="presetPanel" style="display:none">
+              <div class="preset-grid">
+                <button class="preset-btn" data-w="1920" data-h="1080">1920x1080<small>Full HD</small></button>
+                <button class="preset-btn" data-w="1280" data-h="720">1280x720<small>HD</small></button>
+                <button class="preset-btn" data-w="1080" data-h="1080">1080x1080<small>Instagram</small></button>
+                <button class="preset-btn" data-w="1200" data-h="630">1200x630<small>OG Image</small></button>
+                <button class="preset-btn" data-w="800" data-h="600">800x600<small>Web</small></button>
+                <button class="preset-btn" data-w="512" data-h="512">512x512<small>Thumbnail</small></button>
+                <button class="preset-btn" data-w="256" data-h="256">256x256<small>Icon</small></button>
+                <button class="preset-btn" data-w="64" data-h="64">64x64<small>Favicon</small></button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label>Algorithm</label>
+              <select id="algorithmSelect">
+                <option value="lanczos">Lanczos (Best Quality)</option>
+                <option value="bicubic">Bicubic (High Quality)</option>
+                <option value="bilinear">Bilinear (Balanced)</option>
+                <option value="nearest">Nearest Neighbor (Pixel Art)</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label>Output Format</label>
+              <select id="formatSelect">
+                <option value="image/png">PNG (Lossless)</option>
+                <option value="image/jpeg">JPEG (Smaller)</option>
+                <option value="image/webp">WebP (Modern)</option>
+              </select>
+            </div>
+
+            <div id="qualityGroup" style="display:none" class="control-group">
+              <label for="qualitySlider">Quality</label>
+              <input type="range" id="qualitySlider" min="0.1" max="1" step="0.05" value="0.92">
+              <div class="range-labels">
+                <span>Low</span>
+                <span id="qualityDisplay">92%</span>
+                <span>Max</span>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-block" id="resizeBtn">Resize Image</button>
+            <button class="btn btn-outline btn-block" id="compareBtn" style="margin-top:8px">Compare All Algorithms</button>
+          </div>
+        </div>
+
+        <div class="demo-preview">
+          <div class="demo-preview-empty" id="previewEmpty">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            <span>Upload an image to get started</span>
+          </div>
+
+          <div class="demo-result" id="resultArea" style="display:none">
+            <div class="demo-result-tabs" id="resultTabs">
+              <button class="result-tab active" data-tab="single">Result</button>
+              <button class="result-tab" data-tab="compare">Comparison</button>
+            </div>
+
+            <div id="singleResult">
+              <div class="demo-result-img-wrap">
+                <img id="resultImage" alt="Resized result">
+              </div>
+              <div class="demo-result-stats" id="resultStats"></div>
+              <div class="demo-result-actions">
+                <button class="btn btn-primary" id="downloadBtn">Download</button>
+                <button class="btn btn-outline" id="resetBtn">Resize Again</button>
+              </div>
+            </div>
+
+            <div id="compareResult" style="display:none">
+              <div class="compare-grid" id="compareGrid"></div>
+            </div>
+          </div>
+
+          <div class="demo-loading" id="loadingArea" style="display:none">
+            <div class="loading-spinner"></div>
+            <span>Processing...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-inner">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-sub">Three steps. Zero complexity.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Drop Your Image</h3>
+          <p>Drag and drop or click to select any image from your device. Supports PNG, JPG, WebP, and GIF.</p>
+        </div>
+        <div class="step-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Set Your Size</h3>
+          <p>Enter custom dimensions, pick a preset, or use the scale slider. Choose your preferred algorithm.</p>
+        </div>
+        <div class="step-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Download</h3>
+          <p>Get your resized image instantly. Choose PNG, JPEG, or WebP output. Compare algorithms side-by-side.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="algorithms" id="algorithms">
+    <div class="section-inner">
+      <h2 class="section-title">Professional Algorithms</h2>
+      <p class="section-sub">The same algorithms used by professional image editors, running entirely in your browser.</p>
+      <div class="algo-grid">
+        <div class="algo-card">
+          <div class="algo-badge best">Best Quality</div>
+          <h3>Lanczos</h3>
+          <p>Sinc-windowed kernel sampling 36 pixels per output pixel. The gold standard for downscaling photography. Produces the sharpest results with minimal artifacts.</p>
+          <div class="algo-meta">
+            <span>36 samples/px</span>
+            <span>Sinc kernel</span>
+          </div>
+        </div>
+        <div class="algo-card">
+          <h3>Bicubic</h3>
+          <p>Cubic convolution interpolation using a 4x4 pixel neighborhood. Great balance of quality and performance. The default in most image editors.</p>
+          <div class="algo-meta">
+            <span>16 samples/px</span>
+            <span>Cubic kernel</span>
+          </div>
+        </div>
+        <div class="algo-card">
+          <h3>Bilinear</h3>
+          <p>Linear interpolation from 4 surrounding pixels. Fast processing with good quality for moderate size changes. Ideal for real-time previews.</p>
+          <div class="algo-meta">
+            <span>4 samples/px</span>
+            <span>Linear kernel</span>
+          </div>
+        </div>
+        <div class="algo-card">
+          <div class="algo-badge fast">Fastest</div>
+          <h3>Nearest Neighbor</h3>
+          <p>Direct pixel mapping with zero interpolation. Preserves hard edges perfectly. The only choice for pixel art scaling.</p>
+          <div class="algo-meta">
+            <span>1 sample/px</span>
+            <span>No interpolation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="section-inner">
+      <h2 class="section-title">Pricing</h2>
+      <p class="section-sub">The browser tool is completely free. Need server-side processing?</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-tier">Free</div>
+          <div class="pricing-price">$0</div>
+          <div class="pricing-period">forever</div>
+          <ul class="pricing-features">
+            <li>Unlimited browser resizing</li>
+            <li>All 4 algorithms</li>
+            <li>All fit modes</li>
+            <li>PNG, JPG, WebP output</li>
+            <li>Algorithm comparison</li>
+            <li>No watermarks</li>
+            <li>No sign-up required</li>
+          </ul>
+          <a href="#demo" class="btn btn-outline btn-block">Start Resizing</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-popular">Most Popular</div>
+          <div class="pricing-tier">API</div>
+          <div class="pricing-price">Open Source</div>
+          <div class="pricing-period">self-hosted</div>
+          <ul class="pricing-features">
+            <li>Everything in Free</li>
+            <li>REST API endpoint</li>
+            <li>URL-based resizing</li>
+            <li>Batch processing</li>
+            <li>Node.js server</li>
+            <li>Docker ready</li>
+            <li>MIT License</li>
+          </ul>
+          <a href="https://github.com/AnEntrypoint/resizer" target="_blank" rel="noopener" class="btn btn-primary btn-block">View on GitHub</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-price">Contact Us</div>
+          <div class="pricing-period">custom</div>
+          <ul class="pricing-features">
+            <li>Everything in API</li>
+            <li>Managed hosting</li>
+            <li>Custom algorithms</li>
+            <li>SLA guarantee</li>
+            <li>Priority support</li>
+            <li>Custom integrations</li>
+            <li>Volume discounts</li>
+          </ul>
+          <a href="mailto:contact@resizer.dev" class="btn btn-outline btn-block">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+          <rect width="32" height="32" rx="6" fill="#4F46E5"/>
+          <path d="M8 12l4-4 6 6 4-3 4 4v7H8z" fill="#818CF8"/>
+          <circle cx="12" cy="12" r="2" fill="#C7D2FE"/>
+        </svg>
+        <span>Resizer</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/AnEntrypoint/resizer" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/AnEntrypoint/resizer#readme" target="_blank" rel="noopener">Docs</a>
+        <a href="https://github.com/AnEntrypoint/resizer/issues" target="_blank" rel="noopener">Issues</a>
+      </div>
+      <div class="footer-copy">Built with pure JavaScript. No native dependencies. Open source.</div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/app.js"></script>
+</body>
+</html>
