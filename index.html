@@ -133,7 +133,7 @@
             <div class="demo-upload-content" id="uploadContent">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
               <span class="demo-upload-text">Drop image here or click to browse</span>
-              <span class="demo-upload-hint">PNG, JPG, WebP, GIF supported</span>
+              <span class="demo-upload-hint">PNG, JPG, WebP, GIF supported. You can also paste from clipboard.</span>
             </div>
             <div class="demo-upload-preview" id="uploadPreview" style="display:none">
               <img id="uploadThumb" alt="Uploaded image">
@@ -147,9 +147,9 @@
             <div class="control-group">
               <label>Mode</label>
               <div class="control-tabs" id="modeSelect">
-                <button class="control-tab active" data-value="dimensions">Dimensions</button>
-                <button class="control-tab" data-value="scale">Scale</button>
-                <button class="control-tab" data-value="preset">Presets</button>
+                <button type="button" class="control-tab active" data-value="dimensions">Dimensions</button>
+                <button type="button" class="control-tab" data-value="scale">Scale</button>
+                <button type="button" class="control-tab" data-value="preset">Presets</button>
               </div>
             </div>
 
@@ -200,14 +200,14 @@
 
             <div id="presetPanel" style="display:none">
               <div class="preset-grid">
-                <button class="preset-btn" data-w="1920" data-h="1080">1920x1080<small>Full HD</small></button>
-                <button class="preset-btn" data-w="1280" data-h="720">1280x720<small>HD</small></button>
-                <button class="preset-btn" data-w="1080" data-h="1080">1080x1080<small>Instagram</small></button>
-                <button class="preset-btn" data-w="1200" data-h="630">1200x630<small>OG Image</small></button>
-                <button class="preset-btn" data-w="800" data-h="600">800x600<small>Web</small></button>
-                <button class="preset-btn" data-w="512" data-h="512">512x512<small>Thumbnail</small></button>
-                <button class="preset-btn" data-w="256" data-h="256">256x256<small>Icon</small></button>
-                <button class="preset-btn" data-w="64" data-h="64">64x64<small>Favicon</small></button>
+                <button type="button" class="preset-btn" data-w="1920" data-h="1080">1920x1080<small>Full HD</small></button>
+                <button type="button" class="preset-btn" data-w="1280" data-h="720">1280x720<small>HD</small></button>
+                <button type="button" class="preset-btn" data-w="1080" data-h="1080">1080x1080<small>Instagram</small></button>
+                <button type="button" class="preset-btn" data-w="1200" data-h="630">1200x630<small>OG Image</small></button>
+                <button type="button" class="preset-btn" data-w="800" data-h="600">800x600<small>Web</small></button>
+                <button type="button" class="preset-btn" data-w="512" data-h="512">512x512<small>Thumbnail</small></button>
+                <button type="button" class="preset-btn" data-w="256" data-h="256">256x256<small>Icon</small></button>
+                <button type="button" class="preset-btn" data-w="64" data-h="64">64x64<small>Favicon</small></button>
               </div>
             </div>
 

@@ -24,7 +24,7 @@
   --font:-apple-system,BlinkMacSystemFont,'Inter','Segoe UI',Roboto,sans-serif;
   --transition:150ms cubic-bezier(.4,0,.2,1);
 }
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:80px}
 body{font-family:var(--font);color:var(--c-text);background:var(--c-bg);line-height:1.6;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 a{color:var(--c-primary);text-decoration:none}
